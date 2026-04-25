@@ -1,0 +1,16 @@
+# R session files
+.Rhistory
+.RData
+.Rproj.user/
+
+# Raw source data
+data/raw/*.xls
+data/raw/*.xlsx
+
+# Generated outputs (keep folder only)
+output/*
+!output/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db

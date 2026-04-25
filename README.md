@@ -1,26 +1,29 @@
-# 粤港澳大湾区经济收敛分析（发布包）
+# Analysis of Economic Convergence in the Guangdong-Hong Kong-Macao Greater Bay Area
+## Release Package
 
+---
 
-## 目录说明
+###  Directory Structure
+- `greater_bay_area_economy.R`: Main analysis script (directly runnable)
+- `empirical_results_summary.csv`: Summary of core empirical findings
+- `REPRODUCTION.md`: Reproduction guide and data preparation instructions
+- `UPLOAD_CHECKLIST.md`: Pre-upload checklist
+- `.gitignore`: Configuration to prevent accidental upload of raw data and local temporary files
+- `data/raw/`: Directory for storing raw data (empty by default)
+- `output/`: Directory for script outputs (empty by default)
 
-- `greater_bay_area_economy.R`：主分析脚本（可直接运行）
-- `实证结果汇总表.csv`：核心结论示例
-- `REPRODUCTION.md`：复现与数据准备说明
-- `UPLOAD_CHECKLIST.md`：上传前检查清单
-- `.gitignore`：防止误传原始数据和本地临时文件
-- `data/raw/`：原始数据放置目录（默认空目录）
-- `output/`：脚本输出目录（默认空目录）
+---
 
-## 分析内容
+###  Analysis Contents
+- Data cleaning and wide-to-long format conversion
+- Descriptive statistics and visualization
+- σ-convergence test (coefficient of variation, range ratio)
+- Absolute β-convergence test (cross-sectional OLS regression)
+- Robustness tests and results summary
 
-- 数据清洗与宽表转长表
-- 描述统计与可视化
-- `σ` 收敛检验（变异系数、极差率）
-- 绝对 `β` 收敛检验（截面 OLS）
-- 稳健性检验与结果汇总
+---
 
-## 使用方法（简版）
-
-1. 把 4 个原始 Excel 放入 `data/raw/`（见 `REPRODUCTION.md`）。  
-2. 运行 `greater_bay_area_economy.R`。  
-3. 结果会生成在 `output/`。
+###  Quick Usage Guide
+1. Place the 4 raw Excel files into the `data/raw/` directory (see `REPRODUCTION.md` for detailed requirements).
+2. Run the main analysis script: `greater_bay_area_economy.R`.
+3. All results (tables, figures, and outputs) will be automatically saved to the `output/` directory.
